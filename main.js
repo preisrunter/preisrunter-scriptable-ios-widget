@@ -3,7 +3,7 @@ const baseUrl = "https://api.preisrunter.net/v1/cart/";
 
 async function loadCartData(cartName) {
     try {
-        const urlWithCartName = `${baseUrl}${encodeURIComponent(cartName)}`;
+        const urlWithCartName = `${baseUrl}?q=${encodeURIComponent(cartName)}`;
         const request = new Request(urlWithCartName);
         request.method = "GET";
  
