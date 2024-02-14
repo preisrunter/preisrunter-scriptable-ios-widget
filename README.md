@@ -1,4 +1,4 @@
-# Preisrunter Scriptable iOS Widget
+# Preisrunter Einkaufsliste/Warenkorb iOS Widget
 
 Dieses Script ermöglicht es, den Warenkorb von Preisrunter in einem iOS Widget mit der App Scriptable anzuzeigen. Diese Funktion soll in einer künftigen Preisrunter-App für iOS integriert werden. Dieses Script soll aber eine Übergangslösung bieten.
 
