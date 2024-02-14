@@ -1,4 +1,6 @@
-// Preisrunter API URL for getting cart items
+const cartName = "INSERT-CART-NAME-HERE"; // mit Deinem Warenkorb-Namen ersetzen
+
+// AB HIER MUSS NICHTS MEHR ANGEPASST WERDEN
 const baseUrl = "https://api.preisrunter.net/v1/cart/";
 
 async function loadCartData(cartName) {
@@ -40,7 +42,6 @@ async function createWidget(products) {
  
 async function main() {
     if (config.runsInWidget) {
-        const cartName = "INSERT-CART-NAME-HERE";
         const products = await loadCartData(cartName);
         let widget = await createWidget(products);
         Script.setWidget(widget);
