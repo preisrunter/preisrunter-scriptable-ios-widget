@@ -1,5 +1,5 @@
 const settings = {
-    cartName: "INSERT-CART-NAME-HERE", // mit Deinem Warenkorb-Namen ersetzen
+    cartName: "DEIN-WARENKORB-NAME-HIER", // mit Deinem Warenkorb-Namen ersetzen
     baseUrl: "https://api.preisrunter.net/v1/cart/"
 };
 
@@ -7,8 +7,7 @@ async function loadCartData(cartName) {
     const urlWithCartName = `${settings.baseUrl}?q=${encodeURIComponent(cartName)}`;
     try {
         const response = await fetch(urlWithCartName, {
-            method: "GET",
-            headers: { "Content-Type": "application/json" }
+            method: "GET"
         });
         const data = await response.json();
         return data.products || [];
